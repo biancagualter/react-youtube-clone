@@ -6,6 +6,7 @@ import VideoCall from '@material-ui/icons/VideoCall';
 import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
       height: '100vh'
@@ -32,9 +33,8 @@ const useStyles = makeStyles((theme) => ({
     }
   }))
 
-const Home = () => {
+const Topbar = () => {
     const classes = useStyles()
-
     return (
         <div className={classes.root}>
            <AppBar color='inherit' className = {classes.appBar}>
@@ -76,4 +76,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Topbar

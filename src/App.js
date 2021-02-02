@@ -1,13 +1,7 @@
 import React from 'react'
-import { ThemeProvider, createMuiTheme, makeStyles } from '@material-ui/core'
+import { ThemeProvider, createMuiTheme } from '@material-ui/core'
 
-import Home from './components/Home'
-
-const useStyles = makeStyles({
-  root: {
-    
-  }
-})
+import Home from './Home'
 
 function App() {
   const theme = createMuiTheme({
@@ -21,7 +15,6 @@ function App() {
     }
   })
 
-  const classes = useStyles()
 
   return (
     <ThemeProvider theme={theme}>
