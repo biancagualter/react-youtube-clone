@@ -1,37 +1,12 @@
 import React from 'react'
-import { makeStyles, AppBar, Toolbar, IconButton, Button } from '@material-ui/core'
+import { AppBar, Toolbar, IconButton, Button } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import VideoCall from '@material-ui/icons/VideoCall';
 import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import useStyles from '../styles/index'
 
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      height: '100vh'
-    },
-    appBar: {
-        boxShadow: 'none',
-    },
-    toolbar: {
-        paddingBottom: 10,
-    },
-    logo: {
-       height: 18, 
-       paddingRight: 10,
-    },
-    menuIcon: {
-        paddingRight: theme.spacing(3),
-        paddingLeft: 10,
-    },
-    icons: {
-        paddingRight: theme.spacing(2),
-    },
-    grow: {
-        flexGrow: 1
-    }
-  }))
 
 const Topbar = () => {
     const classes = useStyles()
